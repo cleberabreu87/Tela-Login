@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetWare</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/login.css" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css" />
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+  </head>
+
+  <body>
+    <form action="javascript:this.login()" method="post">
+      <fieldset class="login" id="login">
+        <h1><i class="fas fa-lock"></i></h1>
+        <div class="usuario">
+          <label for="txtusuario" id="lblusuario">Usuário:</label>
+          <input type="text" name="txtusuario" id="txtusuario" />
+        </div>
+        <div class="senha">
+          <label for="txtsenha" id="lblsenha">Senha:</label>
+          <input type="password" name="txtsenha" id="txtsenha" />
+        </div>
+        <div class="botao-login">
+          <a href="#">Esqueceu a senha?</a>
+          <button type="submit" id="botao-login">
+            Entrar <i class="fas fa-sign-in-alt"></i>
+          </button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

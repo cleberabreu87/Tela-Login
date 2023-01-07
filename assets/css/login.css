@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background-color: #5879d1;
+}
+
+.login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 15px 15px 15px;
+  border-radius: 5px;
+  border-color: #003a87;
+  width: fit-content;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.575);
+  background-color: white;
+  padding: 50px;
+}
+
+.login h1 {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85px;
+  height: 85px;
+  font-size: 30px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+  color: #003a87;
+}
+
+#lblusuario,
+#lblsenha {
+  margin-top: 15px;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#txtusuario,
+#txtsenha {
+  margin-top: 7.5px;
+  padding: 15px;
+  font-size: 20px;
+  width: 400px;
+  border: 2px solid #003a87;
+  color: #333333;
+  border-radius: 4px;
+  height: 50px;
+}
+
+.botao-login {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.botao-login > a {
+  font-weight: bold;
+}
+
+#botao-login {
+  background-color: #003a87;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  border-radius: 4px;
+  user-select: none;
+  font-size: 20px;
+}
+
+#botao-login:active {
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+
+footer > p {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  color: white;
+  background-color: transparent;
+  font-size: 20px;
+}
