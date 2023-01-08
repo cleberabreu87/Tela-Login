@@ -6,8 +6,8 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background-color: #5879d1;
 }
 
@@ -16,7 +16,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 15px 15px 15px 15px;
+  padding: 15px;
   border-radius: 5px;
   border-color: #003a87;
   width: fit-content;
@@ -43,7 +43,7 @@ body {
 #lblsenha {
   margin-top: 15px;
   display: block;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
 }
 
@@ -51,7 +51,7 @@ body {
 #txtsenha {
   margin-top: 7.5px;
   padding: 15px;
-  font-size: 20px;
+  font-size: 1.25rem;
   width: 400px;
   border: 2px solid #003a87;
   color: #333333;
@@ -75,7 +75,7 @@ body {
   cursor: pointer;
   font-weight: bold;
   color: white;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px;
   border-radius: 4px;
   user-select: none;
   font-size: 20px;
@@ -94,4 +94,34 @@ footer > p {
   color: white;
   background-color: transparent;
   font-size: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    height: 100%;
+  }
+  body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .form {
+    padding: 15px;
+    width: 100%;
+  }
+  .login {
+    position: relative;
+    top: initial;
+    left: initial;
+    transform: translate(0, 0);
+    width: 100%;
+    padding: 15px;
+  }
+
+  #txtusuario,
+  #txtsenha {
+    width: 100%;
+    font-size: 1rem;
+  }
 }
